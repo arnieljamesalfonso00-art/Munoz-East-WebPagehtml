@@ -72,7 +72,7 @@
     <tr><td>2026</td><td>1,981</td><td>-0.44% (Total)</td></tr>
                 </table>
             </div>
-<!-- MAP LOCATION GOES HERE -->
+
 <div class="info-block">
     <h3 style="margin-top: 0;"> Location on the Philippine Map</h3>
     <div class="map-container">
@@ -81,12 +81,12 @@
                     Q510,110 500,140 Q470,170 450,200 Q420,220 390,210 Q360,180 330,190 Q300,220 270,210 Q240,180 210,190 
                     Q180,220 150,210 Q120,180 110,150 Q100,120 120,100 Z" fill="#d0e8f2" stroke="#2c3e50" stroke-width="2"/>
             
-            <!-- Location Marker -->
+          
             <circle cx="290" cy="110" r="8" fill="#e74c3c" stroke="#fff" stroke-width="2"/>
             <text x="305" y="115" font-size="14" font-weight="bold" fill="#222">Barangay Muñoz East</text>
             <text x="305" y="130" font-size="12" fill="#444">Roxas, Isabela</text>
 
-            <!-- Region and Island Names -->
+            
             <text x="190" y="95" font-size="13" fill="#2980b9">Region II</text>
             <text x="220" y="160" font-size="13" fill="#2980b9">Luzon</text>
             <text x="350" y="200" font-size="13" fill="#2980b9">Visayas</text>
@@ -98,7 +98,7 @@
     </div>
 </div>    </div>
 </div>
-<!-- 🗺️ END OF MAP -->
+
 
             <div class="info-block">
                 <h3>Age Distribution (2015)</h3>
@@ -112,7 +112,7 @@
                 <p><em>Note: Age data is based on the 2015 official census of the Philippine Statistics Authority (PSA).</em></p>
             </div>
 
-            <!-- 📍 NEIGHBORING AREAS AND NOTABLE PLACES -->
+            
             <div class="info-block">
                 <h3>📍 Neighboring Barangays and Notable Places</h3>
 
@@ -131,34 +131,34 @@
                 <p>Barangay Muñoz East is a vibrant community characterized by fertile agricultural landscapes, local enterprises, and a close-knit population. Here are some of the key features that define our community:</p>
 
                 <div class="gallery-container">
-                    <!-- Rice and Corn Fields -->
+                   
                     <div class="gallery-item">
                         <img src="Rice.jpg" alt="Vast Rice and Corn Fields" onclick="viewImage(this.src)">
                         <p><strong> Vast Rice and Corn Fields</strong><br>
                         As part of the fertile Mallig Plains, Muñoz East boasts expansive, picturesque agricultural lands. These green and golden fields are the pride of the community, showcasing the natural beauty and abundance of rural Isabela.</p>
                     </div>
 
-                    <!-- Local Irrigation System -->
+                   
                     <div class="gallery-item">
                         <img src="Irregation.jpg" alt="Local Irrigation System" onclick="viewImage(this.src)">
                         <p><strong> Local Irrigation System</strong><br>
                         The barangay relies on a well-maintained network of local irrigation canals that sustain its agricultural productivity year-round. This vital infrastructure helps local farmers achieve thriving crop yields.</p>
                     </div>
 
-                    <!-- Barangay Hall and Multi-Purpose Center -->
+                    
                     <div class="gallery-item">
                         <img src="HALL.jpg" alt="Barangay Hall and Multi-Purpose Center" onclick="viewImage(this.src)">
                         <p><strong>Barangay Hall and Multi-Purpose Center</strong><br>
                         The hub of local governance and civic life. This facility serves as the primary venue for public services, health programs, community assemblies, and sports events that bring residents together.</p>
                     </div>
 
-                   <!-- Barangay Park -->
+                  
 <div class="gallery-item">
     <img src="PUYOG.jpg" alt="Barangay Park" onclick="viewImage(this.src)">
     <p><strong>🚜 Barangay Park</strong><br>
     This welcoming community space provides a central hub for relaxation and recreation. It features clean walking paths, well-maintained gardens, a children's playground, and a covered pavilion for gatherings. It enhances the local quality of life and serves as a vital community gathering spot.</p>
 </div>
-                    <!-- Activities -->
+                   
 <div class="gallery-item">
     <img src="act1.jpg" alt="Barangay Clean Up Drive" onclick="viewImage(this.src)">
     <img src="act2.jpg" alt="Barangay Brigada Eskwela" onclick="viewImage(this.src)">
@@ -167,7 +167,7 @@
 </div>
                     </div>
 
-                    <!-- The Community -->
+                   
                     <div class="gallery-item">
                         <img src="Com.jpg" alt="The Community of Muñoz East" onclick="viewImage(this.src)">
                         <p><strong> The Community of Muñoz East</strong><br>
@@ -189,7 +189,7 @@
     </footer>
 
     <script>
-        // Maintain theme settings across pages
+        
         if (localStorage.getItem('theme') === 'dark') {
             document.body.classList.add('dark-mode');
             document.getElementById('theme-toggle').textContent = '☀️';
@@ -210,7 +210,7 @@
             }
         };
 
-        // Search Functionality
+        
         const searchInput = document.getElementById('search-input');
         const resultsBox = document.getElementById('search-results');
 
@@ -227,22 +227,22 @@
                 : `<em>❌ No matches found for "${query}"</em>`;
         });
 
-        // ✅ Enlarge image on click
+       
         function viewImage(imgSource) {
             const viewer = document.getElementById('imageViewer');
             const expanded = document.getElementById('expandedImage');
             expanded.src = imgSource;
             viewer.style.display = 'block';
-            document.body.style.overflow = 'hidden'; // Prevents page scrolling
+            document.body.style.overflow = 'hidden'; 
         }
 
-        // ✅ Close enlarged image
+      
         function closeImage() {
             document.getElementById('imageViewer').style.display = 'none';
             document.body.style.overflow = 'auto';
         }
 
-        // ✅ Close when clicking outside the image viewer container
+       
         window.onclick = function(e) {
             const viewer = document.getElementById('imageViewer');
             if (e.target === viewer) closeImage();
